@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cmpe235.senior_citizen_app.MainActivity">
+
+    <!--<android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="368dp"
+        android:layout_height="190dp"
+        android:background="?attr/colorPrimary"
+        android:elevation="6dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp" />-->
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="551dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        card_view:layout_constraintLeft_toLeftOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/one"
+            android:layout_width="340dp"
+            android:layout_height="110dp"
+            card_view:cardBackgroundColor="#e8eaf6"
+            card_view:cardCornerRadius="10dp"
+            card_view:layout_goneMarginLeft="2dp"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="80dp">
+
+            <TextView
+                android:id="@+id/bp"
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="40dp"
+                android:text="Blood Pressure"
+                android:textColor="#53ddbb"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/bp_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="70dp"
+                android:text="120/80"
+                android:textColor="#53ddbb"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bp_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="240dp"
+                android:layout_marginTop="75dp"
+                android:text="mm"
+                android:textColor="#53ddbb"
+                android:textSize="12sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton17"
+                android:layout_width="101dp"
+                android:layout_height="112dp"
+                android:layout_marginLeft="33dp"
+                card_view:srcCompat="@drawable/bp_ex" />
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/two"
+            android:layout_width="340dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="10dp"
+            card_view:cardBackgroundColor="#e8eaf6"
+            card_view:cardCornerRadius="10dp"
+            card_view:layout_goneMarginLeft="2dp"
+            card_view:layout_goneMarginTop="10dp"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="30dp">
+
+            <TextView
+                android:id="@+id/hr"
+                android:layout_width="149dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="195dp"
+                android:layout_marginTop="40dp"
+                android:text="Heart Rate"
+                android:textColor="#53ddbb"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/heart_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="195dp"
+                android:layout_marginTop="70dp"
+                android:text="60"
+                android:textColor="#53ddbb"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/heart_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="80dp"
+                android:text="bpm"
+                android:textColor="#53ddbb"
+                android:textSize="12sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton13"
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="33dp"
+                card_view:srcCompat="@drawable/test_3" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/three"
+            android:layout_width="340dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="150dp"
+            card_view:cardBackgroundColor="#e8eaf6"
+            card_view:cardCornerRadius="10dp"
+            card_view:layout_goneMarginLeft="2dp"
+            card_view:layout_goneMarginTop="10dp"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="30dp">
+
+            <TextView
+                android:id="@+id/glucose"
+                android:layout_width="149dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="195dp"
+                android:layout_marginTop="40dp"
+                android:text="Glucose"
+                android:textColor="#53ddbb"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/glu_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="195dp"
+                android:layout_marginTop="70dp"
+                android:text="60"
+                android:textColor="#53ddbb"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/glu_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="80dp"
+                android:text="bpm"
+                android:textColor="#53ddbb"
+                android:textSize="12sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton16"
+                android:layout_width="126dp"
+                android:layout_height="111dp"
+                android:layout_marginLeft="33dp"
+                card_view:srcCompat="@drawable/glucose" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/four"
+            android:layout_width="340dp"
+            android:layout_height="110dp"
+            android:layout_below="@+id/one"
+            android:layout_marginTop="318dp"
+            card_view:cardBackgroundColor="#e8eaf6"
+            card_view:cardCornerRadius="10dp"
+            card_view:layout_goneMarginLeft="2dp"
+            card_view:layout_goneMarginTop="10dp"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="30dp">
+
+            <TextView
+                android:id="@+id/fall"
+                android:layout_width="149dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="195dp"
+                android:layout_marginTop="40dp"
+                android:text="Fall Detection"
+                android:textColor="#53ddbb"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/fall_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="195dp"
+                android:layout_marginTop="70dp"
+                android:text="60"
+                android:textColor="#53ddbb"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fall_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="80dp"
+                android:text="bpm"
+                android:textColor="#53ddbb"
+                android:textSize="12sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton15"
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="33dp"
+                card_view:srcCompat="@drawable/fall1" />
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
